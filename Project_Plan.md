@@ -1,4 +1,4 @@
-# Kakuro Desktop App — Project Plan & Structure
+# Swastik's Kakuro Desktop App — Project Plan & Structure
 
 A Windows desktop Kakuro puzzle app: play a random Easy/Medium/Hard 10×10 puzzle, design your own
 board, save/load/import/export board templates, with a modern warm-toned UI, pencil marks, a
