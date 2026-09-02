@@ -1,0 +1,108 @@
+@import '@fontsource/nunito/400.css';
+@import '@fontsource/nunito/600.css';
+@import '@fontsource/nunito/700.css';
+@import '@fontsource/nunito/800.css';
+
+:root {
+  --wall-brown: #e3a869;
+  --wall-brown-dark: #cd853f;
+  --wall-divider: rgba(0, 0, 0, 0.25);
+  --clue-text: #2a1b0f;
+
+  --white-cell-bg: #ffffff;
+  --white-cell-bg-selected: #fff3d6;
+  --white-cell-bg-peer: #fbf3e2;
+  --user-digit-blue: #2b6cb0;
+  --pencil-mark-gray: #7a8699;
+  --error-red: #d64545;
+  --error-bg: #fbe4e2;
+
+  --accent-primary: #e8a33d;
+  --accent-primary-hover: #d4901f;
+  --accent-danger: #c1503f;
+
+  --app-bg: #f5efe3;
+  --surface: #ffffff;
+  --surface-muted: #f7f2e8;
+  --border: #e5d9c3;
+  --text-primary: #2c2117;
+  --text-secondary: #6b5c4b;
+  --shadow: rgba(43, 32, 20, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--app-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: #2c1a05;
+}
+
+.btn-primary:hover {
+  background: var(--accent-primary-hover);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-muted);
+}
+
+.btn-danger {
+  background: var(--accent-danger);
+  color: #fff2ef;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
